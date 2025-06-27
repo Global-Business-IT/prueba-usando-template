@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+    branches: [ development, staging, main ]
+  pull_request:
+    branches: [ development ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup ambiente
+      run: echo "Aquí iría la instalación de dependencias y ejecución de pruebas"
