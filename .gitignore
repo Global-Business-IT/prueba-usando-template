@@ -1,0 +1,12 @@
+# Archivos comunes a ignorar
+__pycache__/
+node_modules/
+.env
+.venv/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.pyc
+dist/
+build/
